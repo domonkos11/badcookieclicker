@@ -15,6 +15,8 @@
 
             <br>
             <p1 id="currentclicks" style="font-size:500%;">??</p1>
+            <br>
+            <button id="fallback2" class="fallback">Click this text if image doesn't load</button>
         </div>
 
         <br>
@@ -36,6 +38,18 @@
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
             xhr.send();
         }
+
+        var button = document.getElementById("fallback2");
+        button.addEventListener("click", function(e) {
+        // e is the event object
+        // e.target is the button element
+        // do stuff with them
+
+
+
+        requestToServer();
+        });
+
     </script>
     <style>
         img:hover {
@@ -48,8 +62,14 @@
             border: 5px solid;
             margin: auto;
             width: 420px;
-            height: 400px;
+            height: 416px;
             padding: 20px;
         }
+        button.fallback {
+            background:none;
+            border:none; 
+            
+        }
+
     </style>
 </html>
