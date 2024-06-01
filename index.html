@@ -9,6 +9,8 @@
     <body>
         <p1>Kattints a gombra hogy hozzáadj 1-et a MongoDB adatbázishoz!</p1>
         <button class="mongodb" onclick="requestToServer()">+1</button>
+        <img src="./Cookie-Monster-Cookies.jpg" onclick="requestToServer()">
+
         <br>
         <hr>
         <p1 id="currentclicks">??</p1>
@@ -30,4 +32,10 @@
             xhr.send();
         }
     </script>
+    <style>
+        img:hover {
+            cursor: pointer;
+
+        }
+    </style>
 </html>
