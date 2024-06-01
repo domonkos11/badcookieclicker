@@ -2,17 +2,23 @@
 
 <html>
     <head>
-        <title>MongoDB Teszt</title>
+        <title>Bad cookie clicker game</title>
         <meta charset="UTF-8">
     </head>
 
     <body>
-        <p1>Kattints a sütire hogy hozzáadj 1-et a MongoDB adatbázishoz!</p1>
-        <img src="./Cookie-Monster-Cookies.jpg" onclick="requestToServer()" style="width:500px;height:600px;">
+        
+        <p1>Bad cookie clicker where you can increment a number! Multiplayer only!</p1>
+        
+        <div class="main_cookie">
+            <img src="./Cookie-Monster-Cookies.jpg" onclick="requestToServer()" style="width:400px;height:300px;">
+
+            <br>
+            <p1 id="currentclicks" style="font-size:500%;">??</p1>
+        </div>
 
         <br>
-        <hr>
-        <p1 id="currentclicks">??</p1>
+
     </body>
     <script>
         
@@ -35,6 +41,15 @@
         img:hover {
             cursor: pointer;
 
+        }
+        .main_cookie {
+            
+            text-align:center;
+            border: 5px solid;
+            margin: auto;
+            width: 420px;
+            height: 400px;
+            padding: 20px;
         }
     </style>
 </html>
